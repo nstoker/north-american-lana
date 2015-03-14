@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2013
+Project("{CFE76EF7-5588-15BA-6B50-2A1BC49881B3}") = "North-American-Lana", "North-American-Lana.vcxproj", "{277925DF-D91F-820F-BAE5-1533617ABF50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{277925DF-D91F-820F-BAE5-1533617ABF50}.Debug|Win32.ActiveCfg = Debug|Win32
+		{277925DF-D91F-820F-BAE5-1533617ABF50}.Debug|Win32.Build.0 = Debug|Win32
+		{277925DF-D91F-820F-BAE5-1533617ABF50}.Release|Win32.ActiveCfg = Release|Win32
+		{277925DF-D91F-820F-BAE5-1533617ABF50}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
