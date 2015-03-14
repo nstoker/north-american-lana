@@ -301,6 +301,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\North-American-Lana.cpp">
+      <Filter>North-American-Lana\Source</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MainComponent.cpp">
       <Filter>North-American-Lana\Source</Filter>
     </ClCompile>
@@ -1509,6 +1512,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\North-American-Lana.h">
+      <Filter>North-American-Lana\Source</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\MainComponent.h">
       <Filter>North-American-Lana\Source</Filter>
     </ClInclude>

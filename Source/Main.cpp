@@ -10,7 +10,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "MainComponent.h"
-
+#include "North-American-Lana.h"
 
 //==============================================================================
 class NorthAmericanLanaApplication  : public JUCEApplication
@@ -28,8 +28,10 @@ public:
     {
         // This method is where you should put your application's initialisation code..
 
+		theLog = FileLogger::createDefaultAppLogger(getApplicationName(), getApplicationName() + ".log", "Logger test", 32 * 1024);
+		theLog->logMessage("Application version " + getApplicationVersion());
         mainWindow = new MainWindow (getApplicationName());
-    }
+    }		
 
     void shutdown() override
     {

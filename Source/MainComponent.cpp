@@ -7,12 +7,14 @@
 */
 
 #include "MainComponent.h"
+#include "North-American-Lana.h"
 
 
 //==============================================================================
 MainContentComponent::MainContentComponent()
 {
     setSize (600, 400);
+	theLog->logMessage("Main content component created");
 }
 
 MainContentComponent::~MainContentComponent()

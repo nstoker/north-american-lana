@@ -51,6 +51,7 @@ ifeq ($(CONFIG),Release)
 endif
 
 OBJECTS := \
+  $(OBJDIR)/North-American-Lana_69d3a48e.o \
   $(OBJDIR)/MainComponent_a6ffb4a5.o \
   $(OBJDIR)/Main_90ebc5c2.o \
   $(OBJDIR)/juce_audio_basics_812fff7f.o \
@@ -83,6 +84,11 @@ clean:
 strip:
 	@echo Stripping North-American-Lana
 	-@strip --strip-unneeded $(OUTDIR)/$(TARGET)
+
+$(OBJDIR)/North-American-Lana_69d3a48e.o: ../../Source/North-American-Lana.cpp
+	-@mkdir -p $(OBJDIR)
+	@echo "Compiling North-American-Lana.cpp"
+	@$(CXX) $(CXXFLAGS) -o "$@" -c "$<"
 
 $(OBJDIR)/MainComponent_a6ffb4a5.o: ../../Source/MainComponent.cpp
 	-@mkdir -p $(OBJDIR)

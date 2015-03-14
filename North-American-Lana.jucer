@@ -5,6 +5,10 @@
               jucerVersion="3.1.0">
   <MAINGROUP id="OVqhNt" name="North-American-Lana">
     <GROUP id="{45E057CD-A8D4-FFB8-816F-56D3166F5E51}" name="Source">
+      <FILE id="dpnLGI" name="North-American-Lana.cpp" compile="1" resource="0"
+            file="Source/North-American-Lana.cpp"/>
+      <FILE id="Qn7PXU" name="North-American-Lana.h" compile="0" resource="0"
+            file="Source/North-American-Lana.h"/>
       <FILE id="d6eaYf" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
       <FILE id="xvlQwY" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
