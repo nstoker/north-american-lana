@@ -26,17 +26,20 @@ public:
     //==============================================================================
     void initialise (const String& commandLine) override
     {
-        // This method is where you should put your application's initialisation code..
-
 		theLog = FileLogger::createDefaultAppLogger(getApplicationName(), getApplicationName() + ".log", "Logger test", 32 * 1024);
 		theLog->logMessage("Application version " + getApplicationVersion());
+
+		theLog->logMessage("This application has been created to track down and identify a memory\nleak issue when trying to create a more elaborate application.");
+
         mainWindow = new MainWindow (getApplicationName());
     }		
 
     void shutdown() override
     {
         // Add your application's shutdown code here..
+		ScopedPointer<FileLogger> oldPointer;
 
+		oldPointer.swapWith(theLog);
         mainWindow = nullptr; // (deletes our window)
     }
 
@@ -48,7 +51,7 @@ public:
         quit();
     }
 
-    void anotherInstanceStarted (const String& commandLine) override
+    void anotherInstanceStarted (const String& /*commandLine*/) override
     {
         // When another instance of the app is launched while this one is running,
         // this method is invoked, and the commandLine parameter tells you what
